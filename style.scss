@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media (min-width:320px) {
+    #main-header {
+        display: flex;
+        flex-wrap: wrap;
+
+        .top-header {
+            width: 100%;
+            height: 55px;
+            background-color: #0C4B35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .top-header-container {
+                height: 20px;
+                width: 89.33333%;
+                display: flex;
+                justify-content: space-between;
+
+                .addit-img-link {
+                    height: 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .img-link {
+                        margin-right: 10px;
+                        display: flex;
+                        align-items: center;
+
+                        .img-top-header {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+                .selector-block {
+                    height: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .top-lang-select {
+                        background-color: #0C4B35;
+                        color: white;
+                        border: none;
+                        outline: none;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .bot-header {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bottom-header-container {
+                height: 40px;
+                width: 89.33333%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .main-logo-container {
+                    display: flex;
+                    align-items: baseline;
+
+                    .logo-add-first {
+                        position: relative;
+                    }
+
+                    .logo-add-sec {
+                        position: absolute;
+                        left: 87px;
+                        top: 71px
+                    }
+                }
+
+                .main-btn-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    /*Adaptive mode*/
+    .descript-link {
+        display: none;
+    }
+
+    .header-add-btn-second {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: none;
+
+        img {
+            width: 23.55px;
+            height: 23.27px;
+        }
+    }
+
+    .header-main-menu {
+        display: none;
+    }
+
+    .main-btn-container {
+        width: 100px;
+    }
+
+    .header-add-btn-first {
+        background-color: #00730C;
+        border: none;
+        width: 40px;
+        height: 34px;
+        border-radius: 10px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .btn-alert {
+        display: none;
+    }
+
+    /*Adaptive mode end*/
+}
+
+
+@media (min-width:1024px) {
+    .addit-img-link {
+        font-family: 'Nunito', sans-serif;
+        font-size: 12px;
+    }
+
+    .descript-link {
+        display: block;
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+        }
+    }
+
+    .main-btn-container {
+        width: 75%;
+
+        .header-add-btn-first {
+            width: 110px;
+            border-radius: 5px;
+            img {
+                margin-right: 10px;
+            }
+            .btn-alert {
+                display: block;
+                color: white;
+            }
+        }
+
+        .header-main-menu {
+            display: flex;
+
+            .menu-inner-link {
+                padding: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: flex;
+
+                    .menu-arrow-down {
+                        width: 15px;
+                        height: 15px;
+                        background-image: url('img/navImg/email\ 1.png');
+                    }
+                }
+            }
+        }
+    }
+
+    .header-add-btn-second {
+        display: none;
+    }
+}
