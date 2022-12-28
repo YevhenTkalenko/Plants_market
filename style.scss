@@ -183,11 +183,11 @@
                     text-decoration: none;
                     color: black;
                     display: flex;
+                    font-family: 'Nunito', sans-serif;
 
-                    .menu-arrow-down {
-                        width: 15px;
-                        height: 15px;
-                        background-image: url('img/navImg/email\ 1.png');
+                    img {
+                      width: 15px;
+                      height: 15px;  
                     }
                 }
             }

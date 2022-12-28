@@ -155,11 +155,11 @@
     text-decoration: none;
     color: black;
     display: flex;
+    font-family: "Nunito", sans-serif;
   }
-  .main-btn-container .header-main-menu .menu-inner-link a .menu-arrow-down {
+  .main-btn-container .header-main-menu .menu-inner-link a img {
     width: 15px;
     height: 15px;
-    background-image: url("img/navImg/email 1.png");
   }
   .header-add-btn-second {
     display: none;
