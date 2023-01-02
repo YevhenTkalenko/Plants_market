@@ -18,7 +18,6 @@
 
             .top-header-container {
                 height: 20px;
-                width: 89.33333%;
                 display: flex;
                 justify-content: space-between;
 
@@ -45,6 +44,7 @@
                     justify-content: flex-end;
 
                     .top-lang-select {
+                        margin-right: 10px;
                         background-color: #0C4B35;
                         color: white;
                         border: none;
@@ -64,7 +64,6 @@
 
             .bottom-header-container {
                 height: 40px;
-                width: 89.33333%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -75,12 +74,12 @@
 
                     .logo-add-first {
                         position: relative;
-                    }
 
-                    .logo-add-sec {
-                        position: absolute;
-                        left: 87px;
-                        top: 71px
+                        .logo-add-sec {
+                            position: absolute;
+                            right: -3px;
+                            bottom: 13px;
+                        }
                     }
                 }
 
@@ -122,6 +121,7 @@
     }
 
     .header-add-btn-first {
+        margin-left: 5px;
         background-color: #00730C;
         border: none;
         width: 40px;
@@ -138,14 +138,30 @@
         display: none;
     }
 
+    .top-header-container {
+        width: 80%;
+    }
+
+    .bottom-header-container {
+        width: 80%;
+    }
+
     /*Adaptive mode end*/
 }
 
 
 @media (min-width:1024px) {
-    .addit-img-link {
-        font-family: 'Nunito', sans-serif;
-        font-size: 12px;
+    .top-header-container {
+        width: 60%;
+
+        .addit-img-link {
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+        }
+    }
+
+    .bottom-header-container {
+        width: 60%;
     }
 
     .descript-link {
@@ -164,9 +180,11 @@
         .header-add-btn-first {
             width: 110px;
             border-radius: 5px;
+
             img {
                 margin-right: 10px;
             }
+
             .btn-alert {
                 display: block;
                 color: white;
@@ -186,8 +204,8 @@
                     font-family: 'Nunito', sans-serif;
 
                     img {
-                      width: 15px;
-                      height: 15px;  
+                        width: 15px;
+                        height: 15px;
                     }
                 }
             }
@@ -196,5 +214,125 @@
 
     .header-add-btn-second {
         display: none;
+    }
+
+    .main-section {
+        background-image: url('img/navImg/bgOfSection.svg');
+        background-repeat: no-repeat;
+        .description-section-container {
+            height: 719px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            
+            .description-section-inner {
+                height: 673px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .photo-descript {
+                display: flex;
+                align-items: flex-end;
+                margin-left: 0px;
+
+                img {
+                    margin-bottom: 60px;
+                }
+            }
+
+            .content-descript {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .content-descript-inner {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .inner-directive {
+                        width: 100%;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+
+                        &:nth-child(1) {
+                            font-size: 16px;
+                            font-weight: 700;
+                            display: flex;
+                            img {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 48px;
+                            font-weight: 800;
+                        }
+
+                        &:nth-child(3) {
+                            font-size: 48px;
+                            font-weight: 800;
+                            color: #00730C;
+                        }
+
+                        &:nth-child(4) {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+
+                        &:nth-child(5) {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            .header-add-btn-first {
+                                width: 110px;
+                                border-radius: 5px;
+                                margin-left: 0px;
+                                margin-right: 35px;
+
+                                p {
+                                    color: white;
+                                }
+                            }
+
+                            .inner-directive-arrow-content {
+                                margin-right: 15px;
+                            }
+
+                            .inner-directive-arrow-right {
+                                background-image: url('img/navImg/arrow_inner.svg');
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+
+                        &:nth-child(6) {
+                            .inner-directive-list {
+                                display: flex;
+                                align-items: center;
+
+                                .directive-list-inner {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-right: 20px;
+
+                                    p {
+                                        font-weight: 700;
+                                        padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .description-section-main-photo {
+                align-self: flex-end;
+            }
+        }
     }
 }
