@@ -377,7 +377,7 @@
     display: block;
     padding-left: 15px;
     color: #00730C;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
   #global-main .main-description-inner:nth-child(5) {
     display: flex;
@@ -388,16 +388,7 @@
   }
   #global-main .main-description-inner:nth-child(5) .description-sub-inner-laptop {
     display: block;
-    width: 90%;
-  }
-  #global-main .main-description-inner:nth-child(5) .description-sub-inner-laptop .inner-img-laptop {
-    position: absolute;
-    bottom: -15px;
-    left: 9px;
-  }
-  #global-main .main-description-inner:nth-child(5) .description-sub-inner-laptop .inner-img-laptop img {
-    width: 150px;
-    height: 230px;
+    width: 100%;
   }
   #global-main .main-description-inner:nth-child(5) .description-sub-inner-laptop .own-sub-inner {
     display: flex;
