@@ -98,19 +98,27 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        .absolut-img {
+            position: absolute;
+            background-image: url('img/mainImg/plantSection.svg');
+            width: 25%;
+            height: 20%;
+            background-repeat: no-repeat;
+            top: 71%;
+            right: 79%;
+        }
 
         .section-descript-inner {
             height: 640px;
             background-repeat: no-repeat;
             background-size: 100%;
+            position: relative;
 
             .head-of-description {
                 padding: 15px;
                 margin-top: 20px;
 
                 .main-description-inner {
-                    margin-bottom: 25px;
-
                     &:nth-child(1) {
                         font-size: 14px;
                         font-weight: 700;
@@ -130,11 +138,6 @@
                         font-weight: 400;
                         overflow-wrap: break-word;
                         word-break: break-all;
-                    }
-
-                    &:nth-child(4) {
-                        display: flex;
-                        justify-content: center;
                     }
 
                     &:nth-child(5) {
@@ -175,21 +178,26 @@
                 }
             }
         }
+
         .section-descript-servises {
             padding: 15px;
+
             .descript-servises-head-inner {
                 display: flex;
                 justify-content: center;
                 margin-bottom: 15px;
+
                 .descript-head-inner {
                     font-weight: 700;
                     font-size: 28px;
                 }
+
                 .inner-green {
                     padding-left: 8px;
-                    color:#00730C;
+                    color: #00730C;
                 }
             }
+
             .descript-servises-head-inner-parag {
                 text-align: center;
                 margin-bottom: 20px;
@@ -197,6 +205,7 @@
                 font-weight: 400;
                 font-size: 14px;
             }
+
             .descript-servise-manage {
                 display: flex;
                 align-items: center;
@@ -205,29 +214,30 @@
                 .descript-servise-manage-inner {
                     display: flex;
                     margin-bottom: 20px;
-                    width: 100%;
                     background-image: url('img/mainImg/XMLID_46_.png');
                     background-repeat: no-repeat;
-                    height: 116px;
                     border-radius: 10px;
                     box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-                    width: 100%;
+
                     .servise-inner-with-img {
                         margin-left: 20px;
                         margin-right: 15px;
                         display: flex;
                         align-items: center;
                     }
+
                     .servise-inner {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                     }
+
                     .header-sub {
                         margin-bottom: 15px;
                         font-weight: 700;
                         font-size: 16px;
                     }
+
                     .text-sub {
                         font-weight: 400;
                         font-size: 14px;
@@ -257,6 +267,13 @@
         }
     }
 
+    .main-description-inner {
+        margin-bottom: 25px;
+        &:nth-child(4) {
+            display: flex;
+            justify-content: center;
+        }
+    }
     .header-main-menu {
         display: none;
     }
@@ -312,20 +329,29 @@
         border: none;
         border-radius: 5px;
     }
+
     .block-in-mob-dev {
         display: none;
     }
-    
-    .main-description-inner:nth-child(5){
-     display: flex;
-     justify-content: center;
-     color: #00730C;
-     padding: 0;
-      width: calc(100% + 30px);
-      margin: 0 auto;
-      margin-left: -15px;
+
+    .main-description-inner:nth-child(5) {
+        display: flex;
+        justify-content: center;
+        color: #00730C;
+        padding: 0;
+        width: calc(100% + 30px);
+        margin: 0 auto;
+        margin-left: -15px;
     }
 
+    .descript-servise-manage-inner {
+        width: 100%;
+        height: 116px;
+    }
+
+    .hover-img {
+        display: none;
+    }
     /*Adaptive mode end*/
 }
 
@@ -357,7 +383,7 @@
     }
 
     .main-btn-container {
-        width: 80%;
+        width: 70%;
         margin-right: 10px;
 
         .header-add-btn-first {
@@ -378,7 +404,7 @@
             display: flex;
 
             .menu-inner-link {
-                padding-right: 10px;
+                padding-right: 40px;
 
                 a {
                     text-decoration: none;
@@ -403,13 +429,23 @@
 
     #global-main {
         width: 100%;
-        height: 1000px;
+        .absolut-img {
+            background-size: 120px;
+            background-repeat: no-repeat;
+            width: 9%;
+            height: 30%;
+            top: 60%;
+            right: 91%;
+        }
+
         .global-main-description {
             position: relative;
+
             .head-of-description {
-                padding-left: 10%;
+                padding-left: 20%;
             }
         }
+
         .section-descript-inner {
             height: 619px;
             width: 100%;
@@ -430,21 +466,24 @@
         }
 
         .main-description-inner {
-            &:nth-child(2){
+            margin-bottom: 50px;
+            &:nth-child(2) {
                 .text-sub-inner {
                     font-size: 45px;
                 }
             }
-            &:nth-child(4){
+
+            &:nth-child(4) {
                 display: flex;
-                padding: 10px;
-                
+                justify-content: flex-start;
                 .former-description-inner {
                     display: flex;
                     align-items: center;
+
                     .description-inner-btn {
                         width: 174px;
                     }
+
                     .first-span {
                         display: block;
                         padding-left: 15px;
@@ -453,37 +492,97 @@
                     }
                 }
             }
+
             &:nth-child(5) {
                 display: flex;
                 color: #00730C;
                 padding: 0px;
                 width: 100%;
                 margin: 0px;
+
                 .description-sub-inner-laptop {
                     display: block;
                     width: 100%;
 
                     .own-sub-inner {
                         display: flex;
-                        justify-content:space-between;
+                        justify-content: space-between;
                         align-items: center;
-                        .sub-inner{
+
+                        .sub-inner {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+
                             .sub-inner-span {
                                 color: #212529;
                                 font-size: 16px;
                                 font-weight: 700;
                                 padding-left: 5px;
-                            }  
+                            }
                         }
                     }
                 }
             }
         }
     }
-    .description-sub-inner{
+
+    .description-sub-inner {
         display: none;
+    }
+
+    .section-descript-servises {
+        width: 70%;
+        margin: auto;
+
+        .descript-servise-manage {
+            display: flex;
+            justify-content: space-between;
+
+            .descript-servise-manage-inner {
+                width: 24%;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                background-position: 50%;
+                background-position-y: 15%;
+
+                &:hover {
+                    background-color: #00730C;
+                    color: white;
+                }
+                &:hover .active-img {
+                    display: none;
+                }
+                &:hover .hover-img {
+                    display: block;
+                }
+            }
+
+            .servise-inner-with-img {
+                height: 50%;
+            }
+
+            .servise-inner {
+                height: 50%;
+
+                .servise-sub-inner {
+                    text-align: center;
+
+                    .header-sub {
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+
+                    .text-sub {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }
