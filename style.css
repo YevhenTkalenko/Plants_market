@@ -3,7 +3,7 @@
   font-family: "Nunito", sans-serif;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 425px) {
   #main-header {
     display: flex;
     flex-wrap: wrap;
@@ -142,11 +142,11 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  #global-main .section-descript-inner .head-of-description .main-description-inner:nth-child(5) .description-sub-img .sub-img span {
+  #global-main .section-descript-inner .head-of-description .main-description-inner:nth-child(5) .description-sub-img .sub-img p {
     font-size: 9px;
     color: #212529;
   }
-  #global-main .section-descript-inner .head-of-description .main-description-inner:nth-child(5) .description-sub-img .sub-img span:first-child {
+  #global-main .section-descript-inner .head-of-description .main-description-inner:nth-child(5) .description-sub-img .sub-img p:first-child {
     font-weight: 700;
   }
   #global-main .section-descript-servises,
