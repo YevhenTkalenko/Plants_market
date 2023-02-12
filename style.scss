@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+
+
 * {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
@@ -187,7 +191,8 @@
         .descript-experience-btn,
         .section-descript-benefits,
         .section-benefits-btn,
-        .section-descript-work-process {
+        .section-descript-work-process,
+        .section-descript-lawn-servises {
             padding: 15px;
 
             .descript-servises-head-inner {
@@ -494,6 +499,34 @@
             top: 48px;
             left: 245px;
         }
+        .lawn-servises-container {
+            border-radius: 5px;
+            @include heightAndWidth (224px, 345px);
+            @include centerFlexBox (flex, center, center);
+            margin: 0 auto;
+            background-image: url('img/mainLawnServises/BG.svg');
+            position: relative;
+            flex-direction: column;
+
+            .lawn-servises-title {
+                @include fontStyle (700, 20px , #ffffff, 28px);
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .lawn-servises-btn {
+                @include heightAndWidth (40px, 137px);
+                @include fontStyle (700, 14px, #00730C, 19px);
+                @include universalButtonStyle (5px, #ffffff,none,flex);
+                justify-content: center;
+                padding: 10px 0px;
+                .servises-btn-img {
+                    background-image: url('img/mainLawnServises/Group.svg');
+                    background-repeat: no-repeat;
+                    @include heightAndWidth (20px, 20px);
+                    margin-right: 10px;
+                }
+            }
+        }  
     }
 
 
@@ -992,6 +1025,9 @@
                     margin-left: 15px;
                     height: 310px;
                     padding: 50px 29px 70px;
+                    &:first-child {
+                        margin-left: 0px;
+                    }
                     &:hover, &:hover p {
                         background-color:#00730C;
                         color: #FFF8F1;
@@ -1014,6 +1050,23 @@
         .work-process-back-img {
             left: 140px;
             top: 80px;
+        }
+        .lawn-servises-container {
+            @include heightAndWidth (247px, calc(70%));
+            flex-direction: row;
+            justify-content: end;
+            background-image: url("img/mainLawnServises/BG_1440px.svg");
+            .lawn-servises-title {
+                margin-bottom: 0px;
+                & > p {
+                    width: 90%;
+                    text-align: left;
+                    @include fontStyle (700, 26px, unset, 45px)
+                }
+            }
+            .lawn-servises-btn {
+                margin-right: 35px;
+            }
         }
     }
 }

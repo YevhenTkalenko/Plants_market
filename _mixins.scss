@@ -1,0 +1,24 @@
+@mixin heightAndWidth ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin centerFlexBox ($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin fontStyle ($font-weight, $font-size, $color,$line-height) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+}
+
+@mixin universalButtonStyle ($border-radius, $background-color, $border, $display) {
+    border-radius: $border-radius;
+    background-color: $background-color;
+    border: $border;
+    display: $display;
+}
